@@ -52,8 +52,18 @@
             </li>
           </ul>
           <form class="form-inline ml-auto">
-            <a href class="btn btn-outline-light mr-1">登入</a>
-            <a href class="btn btn-outline-light">註冊</a>
+            <a
+              href="#"
+              class="btn btn-outline-light mr-1"
+              data-toggle="modal"
+              data-target="#signin"
+            >登入</a>
+            <a
+            href="#"
+            class="btn btn-outline-light"
+            data-toggle="modal"
+            data-target="#signup"
+            >註冊</a>
           </form>
         </div>
       </div>
@@ -254,9 +264,204 @@
         </div>
       </div>
     </section>
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24317.107772798205!2d121.54709106414697!3d25.042230399367835!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9727e339109%3A0xc34a31ce3a4abecb!2z5Y-w5YyX6LuK56uZ!5e0!3m2!1szh-TW!2stw!4v1579679612412!5m2!1szh-TW!2stw"
+              width="100%"
+              height="450"
+              frameborder="0"
+              style="border:0;"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="col-md-6">
+            <form action class="needs-validation" novalidate>
+              <div class="form-group">
+                <label for="username">姓名*</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-describedby="helpId"
+                  id="username"
+                  placeholder="請輸入姓名"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="tel">電話*</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  aria-describedby="helpId"
+                  id="tel"
+                  placeholder="請輸入電話"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email*</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  aria-describedby="helpId"
+                  id="email"
+                  placeholder="請輸入Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="lineId">line_ID</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-describedby="helpId"
+                  id="lineId"
+                  placeholder
+                />
+              </div>
+              <label>是否想要收到最新優惠 Email</label>
+              <div class="custom-control custom-radio">
+                <input
+                  type="radio"
+                  id="customRadio1"
+                  name="customRadio"
+                  class="custom-control-input"
+                />
+                <label class="custom-control-label" for="customRadio1">是</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input
+                  type="radio"
+                  id="customRadio2"
+                  name="customRadio"
+                  class="custom-control-input"
+                />
+                <label class="custom-control-label" for="customRadio2">否</label>
+              </div>
+              <div class="text-right">
+                <button type="button" class="btn btn-secondary mr-2">取消</button>
+                <button type="submit" class="btn btn-primary">送出</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid">
+      <div class="row">
+        <div
+          class="col-md-6 bg-cover p-4 text-light"
+          style="background-image: url(https://images.unsplash.com/photo-1534368959876-26bf04f2c947?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80)"
+        >
+          <div class="row">
+            <div class="col-md-9">
+              <small>小小標</small>
+              <h3>標題</h3>
+              <p>
+                仉浺炚釤柤纗葒溾伬朹珈沋侗姁牣楈兀迋箂碙。旡郟沭聃峊屭骫鉬圴甪峈扽炔怭岍腠乜佹廑楄。
+                仉釕姖紵朐鸃徭楀圪伄郈沇芛泮芑碚屮呺嫙頍。
+              </p>
+              <a href="#" class="btn btn-outline-warning">查看更多</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-6 bg-cover p-4 text-light"
+          style="background-image: url(https://images.unsplash.com/photo-1437935690510-49ce2c715aee?ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80)"
+        >
+          <div class="row">
+            <div class="col-md-9">
+              <small>小小標</small>
+              <h3>標題</h3>
+              <p>
+                仉浺炚釤柤纗葒溾伬朹珈沋侗姁牣楈兀迋箂碙。旡郟沭聃峊屭骫鉬圴甪峈扽炔怭岍腠乜佹廑楄。
+                仉釕姖紵朐鸃徭楀圪伄郈沇芛泮芑碚屮呺嫙頍。
+              </p>
+              <a href="#" class="btn btn-outline-warning">查看更多</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- singin modal -->
+    <div
+      class="modal fade"
+      id="signin"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <a
+            href="#"
+            data-dismiss="modal"
+            data-toggle="modal"
+            data-target="#signup"
+            class="mr-auto"
+            >還沒有帳號嗎?</a>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- singup modal -->
+    <div
+      class="modal fade"
+      id="signup"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-warning text-white">
+            <h5 class="modal-title" id="exampleModalLabel">註冊</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <a
+              href="#"
+              data-dismiss="modal"
+              data-toggle="modal"
+              data-target="#signin"
+              class="mr-auto"
+              @click="addModalClass"
+            >已經有帳號了?</a>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
-
+<script>
+export default {
+  methods: {
+    addModalClass(e) {
+      console.log(e);
+    },
+  },
+};
+</script>
 <style lang="scss" scope>
 @import "~bootstrap/scss/bootstrap";
 #app {
@@ -281,6 +486,9 @@
 }
 .position-r {
   position: relative;
+}
+.form-control {
+  border-width: 2px;
 }
 @media (min-width: 767.98px) {
   .text-md-dark {
