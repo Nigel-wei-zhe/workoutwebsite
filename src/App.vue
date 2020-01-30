@@ -386,6 +386,11 @@
         </div>
       </div>
     </section>
+    <footer class="bg-secondary">
+      <div class="container text-center py-1">
+        Copyright © 2020 Nigel-wei-zhe All rights reserved
+      </div>
+    </footer>
     <!-- singin modal -->
     <div
       class="modal fade"
